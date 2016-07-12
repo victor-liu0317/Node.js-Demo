@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Index</title>
+	<link rel="stylesheet" type="text/css" href="http://apps.bdimg.com/libs/bootstrap/3.3.4/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script type="text/javascript" src="http://apps.bdimg.com/libs/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<div id="myCarousel" class="carousel slide">
+	   <ol class="carousel-indicators">
+	      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+	      <li data-target="#myCarousel" data-slide-to="1"></li>
+	      <li data-target="#myCarousel" data-slide-to="2"></li>
+	      <li data-target="#myCarousel" data-slide-to="3"></li>
+	   </ol>   
+	   <div class="carousel-inner">
+	      <div class="item active">
+	         <img src="car.jpg" alt="First slide">
+	      </div>
+	      <div class="item">
+	         <img src="sea.jpg" alt="Second slide">
+	      </div>
+	      <div class="item">
+	         <img src="view.jpg" alt="Third slide">
+	      </div>
+	      <div class="item">
+	         <img src="3.jpg" alt="Forth slide">
+	      </div>
+	   </div>
+	</div>
+	<div id="myLogin">
+		<form action="/login" method="post" autocomplete="off">
+			<input type="text" class="form-control" name="username" required="required" placeholder="username"/>
+			<input type="password" class="form-control" name="password" required="required" placeholder="password"/>
+			<button type="submit" class="btn btn-primary btn-lg">
+			<span class="glyphicon glyphicon-user"></span>Login</button>
+		</form>
+	</div>
+	<script type="text/javascript">
+		$(function(){
+			$('.carousel').carousel({
+			  interval: 4000 // in milliseconds
+			})
+		})
+	</script>
+</body>
+</html>
